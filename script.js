@@ -41,14 +41,14 @@ function newDate() {
     if (s <= 9) {
         s = '0' + s;
     }
-    if (h <= 9) {
-        h = '0' + h;
-    }
     if (h > 11) {
         session = 'PM'
     }
     if (h > 12) {
         h = h - 12;
+    }
+    if (h <= 9) {
+        h = '0' + h;
     }
 
     const time = h + ':' + m + ':' + s + ' ' + session;
@@ -57,7 +57,7 @@ function newDate() {
     const today = month + ' ' + d + ', ' + year;
     document.getElementById('tarikh').innerText = today;
     document.getElementById('today').innerHTML = day;
-    console.log(s);
+
     setTimeout("newDate()", 100);
 }
 
