@@ -7,7 +7,9 @@ body {
   overflow: hidden;
 }
 .clock {
-  font-size: 60px;
+  font-size: 50px;
+  max-width: 300px;
+  margin: auto;
 }
 .watch {
   text-align: center;
@@ -20,7 +22,7 @@ body {
 #date {
   font-size: 25px;
   margin: auto;
-  width: 330px;
+  max-width: 300px;
   display: flex;
   justify-content: space-between;
   padding: 14px;
